@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Decorator Design Pattern
+Route::get('decorator','App\Http\Controllers\Decorator\Client@start');
